@@ -1,0 +1,33 @@
+apiVersion: v1
+entries:
+  wordpress:
+  - apiVersion: v1
+    appVersion: 5.3.2
+    created: "2020-03-26T12:12:29.696990861+09:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - wordpress-database
+      version: 7.x.x
+    deprecated: true
+    description: this is the first custom wordpress char
+    digest: 48f25efdaec8aa4425294cff635ca42a24f62424a272a2c9cdb3a8c313df7238
+    home: http://www.wordpress.com/
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - wordpress
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    urls:
+    - wordpress-1.0.0.tgz
+    version: 1.0.0
+generated: "2020-03-26T12:12:29.692576777+09:00"
